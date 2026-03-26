@@ -1,52 +1,76 @@
 # NN_Math_Loss_Functions(NN_Math)
+# 📊 Neural Network Loss Functions (NN_Math)
 
-Introduction
+---
 
-A loss function measures how wrong a model’s prediction is and helps it improve during training.
+##  Introduction
 
-Objective
+A **loss function** measures the difference between actual and predicted values, guiding the model to improve during training.
 
-Understand different loss functions
-Know why and when to use them
+---
 
-Loss Functions
+##  Objective
 
-🔷 MSE (Mean Squared Error)
+* Understand various loss functions
+  
+* Learn their purpose and usage
 
-    What: Measures error, gives more weight to large mistakes
+---
+
+## 📚 Loss Functions
+
+### 🔷 MSE (Mean Squared Error)
+
+    * **What:** Measures error with higher penalty for large mistakes
     
-    Why: Forces model to reduce big errors
+    * **Why:** Encourages the model to minimize significant errors
     
-    Use: Regression
+    * **Use:** Regression
+
+---
+
+### 🔷 MAE (Mean Absolute Error)
+
+    * **What:** Measures average error equally
     
-🔷 MAE (Mean Absolute Error)
+    * **Why:** Provides stable results, less sensitive to outliers
+    
+    * **Use:** Regression
 
-      What: Measures average error equally
-      
-      Why: Stable and less affected by outliers
-      
-      Use: Regression
-      
-🔷 Binary Crossentropy
+---
 
-      What: Measures error in 2-class prediction
-      
-      Why: Works well with probabilities
-      
-      Use: Binary classification
-      
-🔷 Categorical Crossentropy
+### 🔷 Binary Crossentropy
+    
+    * **What:** Evaluates error for two-class predictions
+    
+    * **Why:** Works effectively with probability outputs
+    
+    * **Use:** Binary classification
 
-      What: Used for multiple classes (one-hot labels)
-      
-      Why: Improves correct class prediction
-      
-      Use: Multi-class classification
-      
-🔷 Sparse Categorical Crossentropy
+---
 
-      What: Same as above but with integer labels
-      
-      Why: Simpler and efficient
-      
-      Use: Multi-class classification
+### 🔷 Categorical Crossentropy
+
+* **What:** Used for multi-class problems with one-hot labels
+* **Why:** Helps the model identify the correct class accurately
+* **Use:** Multi-class classification
+
+---
+
+### 🔷 Sparse Categorical Crossentropy
+
+    * **What:** Similar to categorical crossentropy using integer labels
+    
+    * **Why:** More efficient and simpler to implement
+    
+    * **Use:** Multi-class classification
+
+---
+
+## Key Insight
+
+Selecting the appropriate loss function is essential for better model performance.
+
+---
+
+
